@@ -1,0 +1,10 @@
+fragment FellaShortFragment on Fella {
+  id
+  name
+  surname
+  nick
+  suit {
+    id
+    title
+  }
+}

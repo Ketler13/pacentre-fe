@@ -1,0 +1,18 @@
+fragment FellaFullFragment on Fella {
+  id
+  name
+  surname
+  nick
+  car
+  region
+  music
+  suit {
+    id
+    title
+    description
+  }
+  user {
+    id
+    name
+  }
+}

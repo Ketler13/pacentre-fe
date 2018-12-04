@@ -1,0 +1,17 @@
+mutation CreateSuit($title: String!, $description: String!, $createdBy: Int!, $email: String!, $password: String!) {
+  createSuit(
+    title: $title,
+    description: $description
+    createdBy: $createdBy
+    authProvider: {
+      email: {
+        email: $email,
+        password: $password
+      }
+    }
+  ) {
+    id
+    title
+    description
+  }
+}

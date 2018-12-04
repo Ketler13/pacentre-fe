@@ -1,0 +1,6 @@
+query AllUsersShort {
+  allUsers {
+    id
+    name
+  }
+}

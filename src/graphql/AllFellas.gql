@@ -1,0 +1,7 @@
+#import "./FellaShortFragment.gql"
+
+query AllFellas {
+  allFellas {
+    ...FellaShortFragment
+  }
+}

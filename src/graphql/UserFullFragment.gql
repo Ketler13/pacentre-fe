@@ -1,0 +1,15 @@
+fragment UserFullFragment on User {
+  id
+  name
+  email
+  fellas {
+    id
+    name
+    surname
+    nick
+  }
+  suits {
+    id
+    title
+  }
+}

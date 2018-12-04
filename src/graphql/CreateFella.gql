@@ -1,0 +1,25 @@
+#import "./FellaShortFragment.gql"
+
+mutation CreateFella(
+  $name: String!,
+  $surname: String!,
+  $nick: String!,
+  $car: String!,
+  $region: String!,
+  $music: String!,
+  $addedBy: Int!,
+  $suitId: Int!
+  ) {
+    createFella(
+      name: $name,
+      surname: $surname,
+      nick: $nick,
+      car: $car,
+      region: $region,
+      music: $music,
+      addedBy: $addedBy,
+      suitId: $suitId,
+    ) {
+      ...FellaShortFragment
+    }
+}

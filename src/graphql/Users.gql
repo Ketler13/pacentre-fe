@@ -1,0 +1,7 @@
+#import "./UserFullFragment.gql"
+
+query Users($ids: [Int!]!) {
+  users(ids: $ids) {
+    ...UserFullFragment
+  }
+}
